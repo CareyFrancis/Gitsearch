@@ -20,7 +20,7 @@ const routes:Routes=[
     RepositoryComponent
   ],
   imports: [
-    RootModule,
+    RootModule.forRoot(routes),
     BrowserModule,
     AppRoutingModule
   ],

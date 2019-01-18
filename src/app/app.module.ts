@@ -3,12 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SearchPipe } from './search.pipe';
+import { ColourDirective } from './colour.directive';
+import { RepositoryComponent } from './repository/repository.component';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchPipe,
+    ColourDirective,
+    RepositoryComponent
   ],
   imports: [
+    RootModule,
     BrowserModule,
     AppRoutingModule
   ],
